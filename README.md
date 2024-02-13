@@ -31,7 +31,7 @@ Para la elaboración de este proyecto se utilizó Python y Pandas para los proce
 
 Luego, para la obtención complementaria de datos para el cálculo de la población en el año 2022 se realizó webscraping utilizando las herramientasn de Power BI.
 
-Finalmente, para la construcción de un [dashboard](PI2_DA_Siniestros.pbix) interactivo se utiliza Power BI. También se puede visualizar en línea a través del siguiente [link](https://www.novypro.com/project/homicidios-por-siniestros-viales-en-la-ciudad-aut%C3%B3noma-de-buenos-aires-argentina).
+Finalmente, para la construcción de un [dashboard](PI2_DA_Siniestros.pbix) interactivo se utiliza Power BI.
 
 ## ETL y EDA
 
