@@ -14,7 +14,7 @@ Los siniestros viales, también conocidos como accidentes de tráfico o accident
 
 La Ciudad Autónoma de Buenos Aires, situada en la provincia de Buenos Aires, Argentina, no escapa a esta problemática. Los siniestros viales representan una preocupación importante debido al elevado volumen de tráfico y la densidad poblacional en la zona. Estos incidentes pueden afectar significativamente la seguridad de los residentes y visitantes, así como la infraestructura vial y los servicios de emergencia.
 
-Según el censo poblacional de 2022, la población de CABA es de 3,120,612 habitantes en una superficie de 200 km², lo que resulta en una densidad de aproximadamente 15,603 personas por km² (Fuente). Además, en julio de 2023 se registraron 12,437,735 vehículos transitando por los peajes de las autopistas de acceso a CABA (Fuente). En este contexto, la prevención de siniestros viales y la implementación de políticas efectivas se vuelven esenciales para abordar adecuadamente este problema.
+Según el censo poblacional de 2022, la población de CABA es de 3,120,612 habitantes en una superficie de 200 km², lo que resulta en una densidad de aproximadamente 15,150 personas por km² ([Fuente](https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf)). En este contexto, la prevención de siniestros viales y la implementación de políticas efectivas se vuelven esenciales para abordar adecuadamente este problema.
 
 ## Datos
 
@@ -35,7 +35,7 @@ Finalmente, para la construcción de un [dashboard](PI2_DA_Siniestros.pbix) inte
 
 ## ETL y EDA
 
-En principio, se llevó a cabo un proceso de Extracción, Transformación y Carga (ETL) de datos tanto para la categoría de "HECHOS" como para "VÍCTIMAS". Durante este proceso, se normalizaron los nombres de las variables, se analizaron los registros en busca de valores nulos y duplicados, y se eliminaron columnas redundantes o con un alto índice de valores faltantes, entre otras tareas. Una vez completado este procedimiento para ambos conjuntos de datos de "Homicidios", se procedió a fusionar ambas colecciones en un único conjunto denominado df_homicidios.
+En principio, se llevó a cabo un proceso de Extracción, Transformación y Carga (ETL) de datos tanto para la categoría de "HECHOS" como para "VÍCTIMAS". Durante este proceso, se normalizaron los nombres de las variables, se analizaron los registros en busca de valores nulos y duplicados, y se eliminaron columnas redundantes o con un alto índice de valores faltantes, entre otras tareas. Una vez completado este procedimiento para ambos conjuntos de datos de "Homicidios", se procedió a fusionar ambas colecciones en un único conjunto denominado homicidios_merge.
 
 En una segunda parte, se llevó a cabo un exhaustivo Análisis Exploratorio de Datos (EDA) con el objetivo de identificar patrones que pudieran proporcionar información útil para que las autoridades locales adoptaran medidas destinadas a reducir la cantidad de víctimas mortales en incidentes viales. Todos los detalles de este análisis están documentados en [EDA_PT1 (ETL)](Notebooks/EDA_PT1.ipynb) y [EDA_PT2 (EDA)](Notebooks/EDA_PT2.ipynb).
 
@@ -80,7 +80,7 @@ Con base en la revisión anterior, se han formulado tres objetivos destinados a 
     En este contexto, considerando el año 2021 como el año actual y el año 2020 como el año anterior, se inició calculando la *Cantidad de Accidentes Mortales de Motociclistas* para el año 2020, obteniendo un valor de **46.00**. Por lo tanto, el objetivo a cumplir se fijó en **42.78** (equivalente a una reducción del 7% en comparación con la cantidad de accidentes para 2020).
     Al calcular la Cantidad de Accidentes Mortales de Motociclistas para el año 2021, se obtuvo un valor de **-70.37**, indicando un aumento del 70.37% en la cantidad de muertes de conductores de motocicletas en comparación con el año 2020. Este resultado sugiere un incumplimiento del objetivo propuesto, y podría señalar la necesidad de implementar estrategias adicionales para mejorar la seguridad de los motociclistas en el tránsito.
 
-* *Reducir en un 10% la tasa de homicidios en las avenidas en el último año, en CABA, respecto al año anterior*
+* *Reducir en un 10% la tasa de homicidios en los cruces en el último año, en CABA, respecto al año anterior*
 
     Como se vio en el análisis exploratorio, el 75.43% de las víctimas mortales transitaban por cruces al momento del hecho. Se define a la **Tasa de homicidios en Cruces** al número de víctimas fatales en accidentes de tránsito en avenidas por cada 100,000 habitantes en un área geográfica durante un período de tiempo específico, en este caso anual. Su fórmula es:
 
@@ -99,6 +99,8 @@ Entre los años 2016 y 2021, se registraron 717 víctimas fatales en accidentes 
 En cuanto al perfil de las víctimas, el 77% fueron hombres, y casi la mitad de ellos tenía entre 25 y 44 años. En relación al tipo de usuario, un 42% eran motociclistas. El 62% de los homicidios tuvieron como escenario las avenidas de CABA, con el 75% de ellos ocurriendo en cruces.
 
 Para el segundo semestre del año 2021, se cumplió con el objetivo de reducir la tasa de homicidios en siniestros viales. Sin embargo, los objetivos de disminuir la cantidad de accidentes mortales de motociclistas y en cruces para el año 2021 respecto del año 2020 no se cumplieron.
+
+Si bien se cumplió el KPI de reducir en un 10% la tasa de homicidios en siniestros viales en los últimos 6 meses, el resto de los KPI permanece sin cumplir.
 
 En base a lo anterior, se sugieren las siguientes recomendaciones:
 
