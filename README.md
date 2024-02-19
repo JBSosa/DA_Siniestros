@@ -65,7 +65,7 @@ Con base en la revisión anterior, se han formulado tres objetivos destinados a 
 
     Como *Población Total* se calculó la población para el año 2022 a partir de los censos poblacionales del año 2010 y 2022.
 
-    En el año 2021, la *Tasa de Homicidios en Incidentes Viales* fue de **1.59**, indicando que durante los primeros 6 meses del año hubo aproximadamente **1.59** homicidios en accidentes de tránsito por cada 100,000 habitantes. El objetivo establecido es reducir esta tasa para el siguiente semestre de 2021 en un 10%, alcanzando así la cifra de 1.60. Al calcular el KPI para este periodo, se obtiene que la *Tasa de Homicidios en Incidentes Viales* fue de **1.35**, lo que significa que se logró cumplir con éxito el objetivo propuesto para el segundo semestre de 2021.
+    En el primer semestre del año 2021, la *Tasa de Homicidios en Incidentes Viales* fue de **1.76**, indicando que durante los primeros 6 meses del año hubo aproximadamente **1.76** homicidios en accidentes de tránsito por cada 100,000 habitantes. El objetivo establecido es reducir esta tasa para el siguiente semestre de 2021 en un 10%, alcanzando así la cifra de **1.59**. Al calcular el KPI para este periodo, se obtiene que la *Tasa de Homicidios en Incidentes Viales* fue de **1.35**, lo que significa que se logró cumplir con éxito el objetivo propuesto para el segundo semestre de 2021.
 
 * *Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año, en CABA, respecto al año anterior*
 
